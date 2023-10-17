@@ -1,0 +1,22 @@
+body{
+  background-color: black;
+  color:white;
+  text-align: center;
+  font-size:x-large;
+}
+.header{
+  width: 50%;
+  display:flex;
+  justify-content: flex-start;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 20px;
+
+}
+
+.header-label{
+  height: 50px;
+  margin: 10px;
+  padding-top : 20px;
+  font-size: 30px;
+}
