@@ -7,7 +7,7 @@ export default function Header(): JSX.Element{
     return(
         <Navbar sticky='top' data-bs-theme='dark' className='header'>
             <Container className="header-label">
-                <Navbar.Brand>GARAGE</Navbar.Brand>
+                <Navbar.Brand>THE GARAGE</Navbar.Brand>
             </Container>
             <Nav.Item>
                 <Nav.Link as={NavLink} to='/'>HOME</Nav.Link>

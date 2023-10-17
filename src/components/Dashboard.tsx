@@ -16,6 +16,7 @@ const Dashboard: React.FC = () => {
       model: 'Focus',
       year: 2011,
     },
+    
   ];
   return (
     <div>

@@ -6,10 +6,12 @@ import Dashboard from './components/Dashboard';
 
 function App() {
   return(
-    <Container>
+    <Container >
       <BrowserRouter>
         <Header />
+        <div className='main'>
         <Dashboard />
+        </div>
       </BrowserRouter>
     </Container>
   )
