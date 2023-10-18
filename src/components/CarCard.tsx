@@ -3,8 +3,7 @@
 interface CarCardProps {
   car:{ 
     id: number,
-    make: string,
-    model: string
+    name:string,
     year: number,
 };
 }
@@ -12,9 +11,8 @@ interface CarCardProps {
 const CarCard: React.FC<CarCardProps> = ({ car }) => {
     return(
       <div className="car">
-        <h3>{car.make}</h3>
-        <h3>{car.model}</h3>
-        <h3>{car.year}</h3>   
+        <h3>{car.year}</h3>
+        <h3>{car.name}</h3>  
       </div>
     )
    }

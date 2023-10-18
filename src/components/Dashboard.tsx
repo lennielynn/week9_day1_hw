@@ -1,28 +1,30 @@
-import React from 'react';
+import  { useState, useEffect } from 'react';
 import CarList from './CarList';
 
 
-const Dashboard: React.FC = () => {
-  const cars = [
-    {
-      id: 1,
-      make: 'Toyota',
-      model: 'Corolla',
-      year: 2022,
-    },
-    {
-      id: 2,
-      make: 'Ford',
-      model: 'Focus',
-      year: 2011,
-    },
-    
-  ];
+export default function Dashboard() {
+  const [cars, setCars] = useState([]);
+  useEffect(() => {
+    async function getCars() {
+      try {
+        const res = await fetch('https://my-json-server.typicode.com/Llang8/cars-api/cars', {
+          method: 'GET'
+        });
+        if (res.ok) {
+          const data = await res.json();
+          setCars(data);
+        } else {
+          window.alert('Bad request');
+        }
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    }
+    getCars();
+  }, []);
   return (
     <div>
-      <h1>Car Inventory Dashboard</h1>
       <CarList cars={cars} />
     </div>
   );
-};
-export default Dashboard;
+}

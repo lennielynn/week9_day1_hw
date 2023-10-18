@@ -1,11 +1,10 @@
 import CarCard from "./CarCard"; 
 
 
-interface CarListProps {
+export interface CarListProps {
     cars:{ 
         id: number,
-        make: string,
-        model: string
+        name:string,
         year: number,
     }[]
 }

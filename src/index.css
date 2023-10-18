@@ -16,7 +16,26 @@ body{
   align-items: center;
 }
 
-.header{
+a:link, a:visited{
+  border-right: 1px, solid, white;
+  color: rgb(205, 114, 34);
+  text-decoration: none;
+  
+}
+
+a:hover{
+  color:white;
+
+}
+
+.mainimg{
+  background-image: linear-gradient(black, white);
+  height:30%;
+  width: 90%;
+  
+}
+
+.navbar{
   width: 70%;
   display:flex;
   justify-content: flex-start;
@@ -32,10 +51,38 @@ body{
   padding-top : 20px;
   font-size: 30px;
 }
+/* HOME PG */
 
+
+
+/* CARS PAGE */
 .car{
   display: grid;
   grid-template-columns: 33% 33% 33%;
   width: 500px;
-  border-bottom: rgb(93, 92, 92) solid 1px
+  border-bottom: black solid 1px
+}
+
+
+
+/* SIGN IN PAGE */
+
+form{
+  margin-top: 8%;
+}
+
+
+.register-button{
+  width: 120px;
+  height: 40px;
+  color:rgb(205, 114, 34);
+  background-color: black;
+  border: solid 1px rgb(205, 114, 34);
+  border-radius: 10px;
+  margin: 20px 0px 80px
+}
+
+input{
+  height: 20px;
+  width: 200px
 }
